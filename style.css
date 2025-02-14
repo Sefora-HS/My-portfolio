@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+/* Base style */
+:root {
+    --bg-color: #dbc1d5;
+    --bg-color2: #ddd8d8;
+    --text-color: #ffffff;
+    --text-color2: #6e6c6c;
+}
+
+/* Imported font */
+@font-face {
+    font-family: "Catchye";
+    src: url("font/Catchye.otf");
+    font-weight: normal;
+}
+
+body {
+    font-family: "Catchye", sans-serif;
+    background-color: var(--bg-color2);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Navigation bar */
+nav {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6rem;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    letter-spacing: 2.5px;
+}
+
+nav button {
+    background: transparent;
+    border: 1.5px solid #ffffff;
+    padding: 10px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    letter-spacing: 2.5px;
+    font-family: "Catchye";
+}
+
+nav .right a {
+    margin: 0 1rem;
+}
+
+/* Hero section */
+.hero {
+    height: 100vh;
+    background-image: url("media/hero.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home {
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.home h1 {
+    font-family: "Catchye";
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.home h2 {
+    font-family: "Catchye";
+    font-size: 3rem;
+}
+
+.home p {
+    font-family: "Catchye";
+    font-size: 1rem;
+}
+
+.home button {
+    background: transparent;
+    margin-top: 2rem;
+    padding: 15px 20px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-family: "Catchye";
+    font-size: 1.5rem;
+}
+
+.home button:hover {
+    background-color: #ffffff;
+    color: #7A6F86;
+}
