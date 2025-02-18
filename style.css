@@ -103,4 +103,6 @@ nav .right a {
 .home button:hover {
     background-color: #ffffff;
     color: #7A6F86;
+    transition: ease-in-out 0.8s;
+    font-size: 1.8rem;
 }
