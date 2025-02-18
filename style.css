@@ -9,7 +9,7 @@
 /* Base style */
 :root {
     --bg-color: #dbc1d5;
-    --bg-color2: #ddd8d8;
+    --bg-color2: #fefefe;
     --text-color: #ffffff;
     --text-color2: #6e6c6c;
 }
@@ -44,7 +44,7 @@ nav {
     letter-spacing: 2.5px;
 }
 
-nav button {
+.nav-button {
     background: transparent;
     border: 1.5px solid #ffffff;
     padding: 10px 20px;
@@ -54,8 +54,26 @@ nav button {
     font-family: "Catchye";
 }
 
+.nav-button.active {
+    border-color: #2F91B8; /* Couleur de la bordure active */
+    color: #2F91B8; /* Couleur du texte active */
+}
+
 nav .right a {
     margin: 0 1rem;
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.nav-link.active {
+    color: #2F91B8; /* Couleur active */
+}
+
+section {
+    height: 100vh;
 }
 
 /* Hero section */
@@ -98,11 +116,17 @@ nav .right a {
     color: #ffffff;
     font-family: "Catchye";
     font-size: 1.5rem;
+    transition: transform 0.4s ease;
 }
 
 .home button:hover {
     background-color: #ffffff;
     color: #7A6F86;
-    transition: ease-in-out 0.8s;
     font-size: 1.8rem;
+    transform: scale(1.2);
 }
+
+.about {
+    height: 100vh;
+}
+
