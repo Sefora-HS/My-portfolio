@@ -8,7 +8,7 @@
 
 /* Base style */
 :root {
-    --bg-color: #dbc1d5;
+    --bg-color: #907f94;
     --bg-color2: #F8F8F8;
     --text-color: #ffffff;
     --text-color2: #6e6c6c;
@@ -21,9 +21,15 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "Fashion";
+    src: url("font/Fashion\ Fetish\ Light.ttf");
+    font-weight: normal;
+}
+
 body {
     font-family: "Catchye", sans-serif;
-    background-color: var(--bg-color2);
+    background-color: var(--bg-color);
 }
 
 a {
@@ -128,4 +134,90 @@ section {
 
 .about {
     height: 100vh;
+}
+
+.about .parent {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+}
+    
+.about .div1 { 
+    grid-area: 1 / 4 / 7 / 8;
+    padding-top: 15vh;
+}
+
+.about .div2 { 
+    grid-area: 2 / 1 / 5 / 4; 
+    background-image: url("media/about-profil.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    margin-left: 6rem;
+}
+
+.about .div3 { 
+    grid-area: 5 / 1 / 6 / 4;
+    /* background-color: red; */
+}
+
+.about .parent .div1 .title {
+    text-align: center;
+}
+
+.about .parent .div1 .title h1 {
+    font-size: 3rem;
+    color: #315377;
+}
+
+.about .parent .div1 .title p {
+    font-size: 1rem;
+    font-family: "Fashion";
+    color: #ffffff;
+}
+    
+.about .parent .div1 .timeline {
+    margin: 3em auto;
+    max-width: 80%;
+}   
+
+.about .parent .div1 .checkpoint {
+    max-width: 50%;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    position: relative;
+}
+
+.about .parent .div1 .checkpoint h2 {
+    padding-bottom: 0.1rem;
+    color: #315377;
+}
+
+.about .parent .div1 .checkpoint p {
+    line-height: 17px;
+    font-family: "Fashion";
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.about .parent .div1 .checkpoint:nth-child(odd) {
+    border-left: 3px solid #ffffff;
+    padding-left: 1.5em;
+    transform: translateX(17em);
+}
+
+.about .parent .div1 .checkpoint:nth-child(even) {
+    border-right: 3px solid #ffffff;
+    padding-right: 1.5em;
+    transform: translateX(-0.25em);
+}
+
+.about .parent .div1 .checkpoint .border {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 1em;
 }
