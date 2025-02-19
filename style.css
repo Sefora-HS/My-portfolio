@@ -55,8 +55,8 @@ nav {
 }
 
 .nav-button.active {
-    border-color: #2F91B8; /* Couleur de la bordure active */
-    color: #2F91B8; /* Couleur du texte active */
+    border-color: #000000; /* Couleur de la bordure active */
+    color: #000000; /* Couleur du texte active */
 }
 
 nav .right a {
@@ -69,7 +69,7 @@ nav .right a {
 }
 
 .nav-link.active {
-    color: #2F91B8; /* Couleur active */
+    color: #000000; /* Couleur active */
 }
 
 section {
