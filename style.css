@@ -274,6 +274,12 @@ section {
     background-color: #315377;
 }
 
+.skills div {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+
 .projects {
     height: 100vh;
     background: var(--bg-color);
