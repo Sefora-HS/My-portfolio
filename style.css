@@ -269,7 +269,17 @@ section {
 }
 
 /* Projects section */
+.skills {
+    height: 50vh;
+    background-color: #315377;
+}
+
 .projects {
+    height: 100vh;
+    background: var(--bg-color);
+}
+
+.contact {
     height: 100vh;
     background-color: #315377;
 }
