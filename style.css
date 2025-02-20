@@ -27,6 +27,10 @@
     font-weight: normal;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Catchye", sans-serif;
     background-color: var(--bg-color);
