@@ -256,3 +256,8 @@ section {
     background: #ffffff;
     color: #315377;
 }
+
+.projects {
+    height: 100vh;
+    background-color: #315377;
+}
