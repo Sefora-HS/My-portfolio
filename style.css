@@ -62,11 +62,18 @@ nav {
     cursor: pointer;
     letter-spacing: 2.5px;
     font-family: "Catchye";
+    transition: transform 0.4s ease;
 }
 
 .nav-button.active {
-    border-color: #000000; /* Couleur de la bordure active */
-    color: #000000; /* Couleur du texte active */
+    border-color: #000000;
+    color: #000000;
+}
+
+.nav-button:hover {
+    background-color: #ffffff;
+    color: #7A6F86;
+    transform: scale(1.1);
 }
 
 nav .right a {
@@ -79,7 +86,7 @@ nav .right a {
 }
 
 .nav-link.active {
-    color: #000000; /* Couleur active */
+    color: #000000;
 }
 
 section {
@@ -137,6 +144,7 @@ section {
     transform: scale(1.2);
 }
 
+/* About section */
 .about {
     height: 100vh;
 }
@@ -149,14 +157,15 @@ section {
     grid-row-gap: 0px;
     height: 100vh;
 }
-    
-.about .div1 { 
+
+.about .div1 {
     grid-area: 1 / 4 / 7 / 8;
     padding-top: 15vh;
 }
 
-.about .div2 { 
-    grid-area: 2 / 1 / 5 / 4; 
+/* Div2 style + Profil's img */
+.about .div2 {
+    grid-area: 2 / 1 / 5 / 4;
     background-image: url("media/about-profil.jpg");
     background-size: cover;
     border-radius: 50%;
@@ -170,11 +179,11 @@ section {
     transform: scale(1.1);
 }
 
-.about .div3 { 
+.about .div3 {
     grid-area: 5 / 1 / 6 / 4;
-    /* background-color: red; */
 }
 
+/* Time line style */
 .about .parent .div1 .title {
     text-align: center;
 }
@@ -189,11 +198,11 @@ section {
     font-family: "Fashion";
     color: #ffffff;
 }
-    
+
 .about .parent .div1 .timeline {
     margin: 3em auto;
     max-width: 80%;
-}   
+}
 
 .about .parent .div1 .checkpoint {
     max-width: 50%;
@@ -232,6 +241,7 @@ section {
     padding: 1em;
 }
 
+/* Social media's buttons */
 .about .parent .div3 .social-media {
     margin-left: 13.4rem;
     margin-top: 2rem;
@@ -258,6 +268,7 @@ section {
     color: #315377;
 }
 
+/* Projects section */
 .projects {
     height: 100vh;
     background-color: #315377;
