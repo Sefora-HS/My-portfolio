@@ -158,6 +158,11 @@ section {
     height: 500px;
     width: 500px;
     margin-left: 6rem;
+    transition: transform 0.4s ease;
+}
+
+.about .div2:hover {
+    transform: scale(1.1);
 }
 
 .about .div3 { 
@@ -220,4 +225,30 @@ section {
     border: 2px solid #ffffff;
     border-radius: 5px;
     padding: 1em;
+}
+
+.about .parent .div3 .social-media {
+    margin-left: 13.4rem;
+    margin-top: 2rem;
+}
+
+.about .parent .div3 .social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.7rem;
+    height: 2.7rem;
+    background: transparent;
+    border: 2px solid #315377;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 25px 15px 30px 0;
+}
+
+.about .parent .div3 .social-media a:hover {
+    background: #ffffff;
+    color: #315377;
 }
