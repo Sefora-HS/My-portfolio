@@ -307,7 +307,7 @@ section {
     color: #907f94;
 }
 .projects {
-    height: 100vh;
+    height: 110vh;
     background: var(--bg-color); 
 }
 
@@ -353,6 +353,13 @@ section {
     text-align: center;
     background-color: #315377;
     border-radius: 10px;
+}
+.card p {
+    text-align: center;
+    color: #f8f8f8;
+    font-family: 'poppins';
+    font-size: 0.9rem;
+    margin-top: 1rem;
 }
 
 .contact {
