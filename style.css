@@ -308,7 +308,51 @@ section {
 }
 .projects {
     height: 100vh;
-    background: var(--bg-color);
+    background: var(--bg-color); 
+}
+
+.projects .projects-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 16px;
+    margin-top: 2rem;
+}
+
+.projects h2 {
+    font-family: 'Catchye';
+    font-size: 3rem;
+    text-align: center;
+    color: #315377;
+    margin-top: 4rem;
+}
+
+.card {
+    border: 1px solid #315377;
+    border-radius: 8px;
+    width: 300px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+.card h3 {
+    margin-top: 16px;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #315377;
+    border-radius: 10px;
 }
 
 .contact {
