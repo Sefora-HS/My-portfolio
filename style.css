@@ -269,17 +269,43 @@ section {
 }
 
 /* Projects section */
-.skills {
+#skills-section {
+    background-color:#315377;
     height: 50vh;
-    background-color: #315377;
-}
-
-.skills div {
-    background-color: aquamarine;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem; /* Add gap between elements */
 }
 
+#skills-section h2 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #F8F8F8;
+    letter-spacing: 8px;
+}
+
+#skills-section .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* Add gap between icons */
+}
+
+#skills-section i {
+    font-size: 3rem;
+    color: #F8F8F8;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 1rem 0; /* Add margin to ensure proper spacing */
+}
+
+#skills-section i:hover {
+    transform: scale(1.2);
+    color: #907f94;
+}
 .projects {
     height: 100vh;
     background: var(--bg-color);
