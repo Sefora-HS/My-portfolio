@@ -363,6 +363,14 @@ section {
 }
 
 .contact {
-    height: 30vh;
+    height: 50vh;
     background-color: #315377;
+}
+
+.contact h2 {
+    text-align: center;
+    font-family: 'Catchye';
+    font-size: 3rem;
+    color: #f8f8f8;
+    padding-top: 3rem;
 }
