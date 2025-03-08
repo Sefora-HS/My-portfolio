@@ -378,3 +378,26 @@ section {
     color: #f8f8f8;
     padding-top: 3rem;
 }
+
+.contact p {
+    font-family: 'catchye';
+    text-align: center;
+    color: #f8f8f8;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.contact ul {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #f8f8f8;
+}
+
+.contact ul li {
+    margin-top: 0.5rem;
+}
+
+.contact ul li:hover {
+    color: #907f94;
+    transform: scale(1.1);
+}
