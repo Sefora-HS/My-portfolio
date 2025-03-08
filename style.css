@@ -36,6 +36,10 @@ body {
     background-color: var(--bg-color);
 }
 
+p {
+    font-family: 'poppins';
+}
+
 a {
     color: var(--text-color);
     text-decoration: none;
